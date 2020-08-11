@@ -1,0 +1,36 @@
+openapi: 3.0.0
+info:
+  title: Eclat
+  description: Eclat is base swagger model generation
+  version: 0.0.1-snapshot
+servers:
+  - url: 'http://localhost:8080'
+tags:
+  - name: User Management
+paths:
+  /findUser:
+    get:
+      tags:
+        - User Management
+      description: Find user by id
+      operationId: findUserById
+      responses:
+        "200":
+          description: "In case of no error"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserModel'
+components:
+  schemas:
+    UserModel:
+      type: object
+      properties:
+        name:
+          type: string
+        email:
+          type: string
+        username:
+          type: string
+        password:
+          type: string

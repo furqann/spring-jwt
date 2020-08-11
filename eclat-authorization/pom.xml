@@ -8,7 +8,7 @@
         <groupId>com.eclat</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <groupId>${parent.groupId}</groupId>
+    <groupId>com.eclat</groupId>
     <artifactId>eclat-authorization</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>eclat-authorization</name>
@@ -22,8 +22,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>${parent.groupId}</groupId>
+            <groupId>com.eclat</groupId>
             <artifactId>eclat-api</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
         <!--        Spring boot-->
         <dependency>
@@ -59,6 +60,7 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>${spring.boot.version}</version>
                 <configuration>
                     <mainClass>
                         com.eclat.AuthorizationApplication
