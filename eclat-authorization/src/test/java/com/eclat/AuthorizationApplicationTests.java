@@ -1,10 +1,10 @@
-package com.eclat.authorization;
+package com.eclat;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class EclatAuthorizationApplicationTests {
+class AuthorizationApplicationTests {
 
   @Test
   void contextLoads() {

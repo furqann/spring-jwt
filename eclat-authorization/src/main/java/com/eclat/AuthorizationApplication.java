@@ -1,13 +1,13 @@
-package com.eclat.authorization;
+package com.eclat;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class EclatAuthorizationApplication {
+public class AuthorizationApplication {
 
   public static void main(String[] args) {
-    SpringApplication.run(EclatAuthorizationApplication.class, args);
+    SpringApplication.run(AuthorizationApplication.class, args);
   }
 
 }
